@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Slider from 'react-slick';
 import ProjectCard from './ProjectCard';
 import ProjectDetails from './ProjectDetails';
@@ -52,10 +52,13 @@ const ProjectGallery = () => {
 
     const handleExpand = (index) => {
         setExpandedProject(index === expandedProject ? null : index);
-        if (index !== expandedProject && detailsRef.current) {
+    };
+
+    useEffect(() => {
+        if (expandedProject !== null && detailsRef.current) {
             detailsRef.current.scrollIntoView({ behavior: 'smooth' });
         }
-    };
+    }, [expandedProject]);
 
     const settings = {
         dots: true,
