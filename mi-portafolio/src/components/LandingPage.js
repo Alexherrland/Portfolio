@@ -1,5 +1,6 @@
 import Button from "./ui/button";
 import { motion } from "framer-motion";
+import ProjectGallery from './ProjectGallery';
 
 export default function LandingPage() {
     return (
@@ -43,7 +44,7 @@ export default function LandingPage() {
             <section id="projects" className="w-full max-w-6xl mt-20">
                 <h3 className="text-3xl font-bold">Mis proyectos destacados</h3>
                 <div className="mt-4">
-                    {/* Aquí se renderizará Projects.js */}
+                    <ProjectGallery />
                 </div>
             </section>
         </div>
