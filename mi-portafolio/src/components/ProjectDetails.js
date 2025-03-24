@@ -11,7 +11,7 @@ const ProjectDetails = ({ project }) => {
     };
 
     return (
-        <div className="flex mt-6 p-6 bg-gray-800 text-white rounded">
+        <div className="flex mt-6 p-6 bg-gray-800 text-gray-100 rounded">
             <div className="w-1/2">
                 {project.images && (
                     <Slider {...settings}>
@@ -24,7 +24,7 @@ const ProjectDetails = ({ project }) => {
                 )}
             </div>
             <div className="w-1/2 px-6">
-                <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
+                <h2 className="text-2xl font-bold mb-4 text-yellow-500">{project.title}</h2>
                 <p>{project.details}</p>
             </div>
         </div>
