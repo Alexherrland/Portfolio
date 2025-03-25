@@ -1,50 +1,29 @@
-import Button from "./ui/button";
-import { motion } from "framer-motion";
-import ProjectGallery from './ProjectGallery';
+import Navbar from "./ui/Navbar";
+import HeroSection from "./ui/HeroSection";
+import ProjectGallery from "./Gallery/ProjectGallery";
 
 export default function LandingPage() {
     return (
-        <div className="min-h-screen bg-gray-900 text-gray-100 flex flex-col items-center p-8">
-            {/* Header */}
-            <header className="w-full flex justify-between items-center max-w-6xl py-4">
-                <h1 className="text-2xl font-bold">Alex Herrerias Ramirez</h1>
-                <nav className="space-x-6">
-                    <a href="#projects" className="hover:text-yellow-500">Proyectos</a>
-                    <a href="#about" className="hover:text-yellow-500">Sobre mí</a>
-                    <a href="#skills" className="hover:text-yellow-500">Skills</a>
-                </nav>
-            </header>
-
-            {/* Hero Section */}
-            <motion.div 
-                className="text-center mt-20"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-            >
-                <Button className="bg-yellow-500 text-black mb-4 hover:bg-yellow-600">
-                    <a href="/cv.pdf" download className="w-full h-full inline-block">Descargar CV</a>
-                </Button>
-                <h2 className="text-4xl font-bold">
-                    <span className="text-yellow-500">Software Developer</span>
-                </h2>
-                <h3 className="text-3xl mt-2">Alex Herrerias Ramirez</h3>
-                <p className="text-lg mt-2">Python (IA/Backend) & React Frontend</p>
-                <div className="mt-6 space-x-4">
-                    <Button className="bg-blue-500 hover:bg-blue-600">
-                        <a href="https://www.linkedin.com/in/alex-herrerías-ramírez-283179129/" target="_blank" rel="noopener noreferrer" className="w-full h-full inline-block">LinkedIn</a>
-                    </Button>
-                    <Button className="bg-gray-700 hover:bg-gray-800">
-                        <a href="https://github.com/Alexherrland" target="_blank" rel="noopener noreferrer" className="w-full h-full inline-block">GitHub</a>
-                    </Button>
+        <div className="min-h-screen bg-white text-gray-900">
+            <Navbar />
+            <HeroSection />
+            <section id="projects" className="w-full bg-[#0A192F] text-white py-10">
+                <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16">
+                    <div className="mt-4">
+                        <ProjectGallery />
+                    </div>
                 </div>
-            </motion.div>
-
-            {/* Projects Section */}
-            <section id="projects" className="w-full max-w-6xl mt-20">
-                <h3 className="text-3xl font-bold">Mis proyectos destacados</h3>
-                <div className="mt-4">
-                    <ProjectGallery />
+            </section>
+            <section id="extras" className="w-full bg-white py-20">
+                <div className="max-w-6xl mx-auto px-6">
+                    <h3 className="text-3xl font-bold mb-6 text-gray-900">Extras</h3>
+                    <p className="text-gray-700">Contenido adicional aquí...</p>
+                </div>
+            </section>
+            <section id="media" className="w-full bg-[#0A192F] text-white py-20">
+                <div className="max-w-6xl mx-auto px-6">
+                    <h3 className="text-3xl font-bold mb-6">Media</h3>
+                    <p className="text-gray-300">Contenido multimedia aquí...</p>
                 </div>
             </section>
         </div>
