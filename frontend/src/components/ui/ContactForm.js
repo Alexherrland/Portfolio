@@ -6,12 +6,12 @@ export default function ContactForm({ isVisible, toggleContactMe }) {
         <AnimatePresence>
             {isVisible && (
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.9 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50 backdrop-blur-sm"
-                >
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="fixed inset-0 z-50 flex items-center justify-center min-h-screen p-4 bg-black bg-opacity-50 backdrop-blur-sm"
+            >
                     <div className="w-full max-w-md bg-gray-900 p-6 rounded-lg shadow-2xl relative max-h-[90vh] overflow-y-auto">
                         <button
                             onClick={() => toggleContactMe(false)}

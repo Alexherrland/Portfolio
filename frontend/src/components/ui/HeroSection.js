@@ -27,7 +27,7 @@ export default function HeroSection({ showNavbar }) {
     return (
         <section className="flex flex-col items-center justify-center min-h-screen text-center relative max-w-6xl mx-auto px-4 sm:px-6 md:px-12 pt-16">
             {!showNavbar && (
-                <div className="absolute top-0 left-0 w-full flex items-center py-4 md:py-6 pr-0 md:pr-0">
+                <div className="absolute top-0 left-0 w-full flex items-center py-4 md:py-6 pr-4 pl-4 md:pr-0 md:pl-0">
                     <NavContent />
                 </div>
             )}
