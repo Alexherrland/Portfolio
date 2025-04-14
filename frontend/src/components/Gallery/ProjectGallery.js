@@ -4,13 +4,13 @@ const projects = [
     { 
         title: "Proyecto TFG - IA con PyTorch", 
         description: "Proyecto de fin de grado centrado en Inteligencia Artificial utilizando PyTorch, implementando modelos de aprendizaje profundo para resolver problemas complejos.", 
-        image: `${process.env.PUBLIC_URL}/images/portfolio.png`,
+        image: `${process.env.PUBLIC_URL}/images/tfg.png`,
         color: "bg-red-500"
     },
     { 
         title: "URL Shortener", 
         description: "Aplicación web full-stack desarrollada con Django y React que permite acortar URLs largas. Incluye sistema de autenticación y análisis de estadísticas.", 
-        image: `${process.env.PUBLIC_URL}/images/portfolio.png`,
+        image: `${process.env.PUBLIC_URL}/images/shortener.png`,
         color: "bg-blue-500"
     },
     { 
