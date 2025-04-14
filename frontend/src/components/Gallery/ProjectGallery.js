@@ -2,22 +2,22 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
     { 
-        title: "Proyecto 1", 
-        description: "Descripción del proyecto", 
+        title: "Proyecto TFG - IA con PyTorch", 
+        description: "Proyecto de fin de grado centrado en Inteligencia Artificial utilizando PyTorch, implementando modelos de aprendizaje profundo para resolver problemas complejos.", 
         image: `${process.env.PUBLIC_URL}/images/portfolio.png`,
-        color: "bg-green-500"
+        color: "bg-red-500"
     },
     { 
-        title: "Proyecto 2", 
-        description: "Descripción del proyecto", 
-        image: `${process.env.PUBLIC_URL}/images/portfolio.png`,
-        color: "bg-purple-500"
-    },
-    { 
-        title: "Proyecto 3", 
-        description: "Descripción del proyecto", 
+        title: "URL Shortener", 
+        description: "Aplicación web full-stack desarrollada con Django y React que permite acortar URLs largas. Incluye sistema de autenticación y análisis de estadísticas.", 
         image: `${process.env.PUBLIC_URL}/images/portfolio.png`,
         color: "bg-blue-500"
+    },
+    { 
+        title: "Proyecto C#", 
+        description: "Aplicación desarrollada en C# utilizando .NET Framework, demostrando conocimientos en desarrollo de software empresarial y patrones de diseño.", 
+        image: `${process.env.PUBLIC_URL}/images/portfolio.png`,
+        color: "bg-green-500"
     }
 ];
 
