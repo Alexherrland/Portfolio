@@ -18,7 +18,7 @@ export default function HeroSection({ showNavbar }) {
         },
         { 
             icon: FileText, 
-            href: "/cv.pdf", 
+            href: `${process.env.PUBLIC_URL}/cv.pdf`,
             color: "text-green-600 hover:text-green-700",
             tooltip: "Download CV" 
         }
