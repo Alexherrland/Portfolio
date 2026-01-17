@@ -38,7 +38,7 @@ export default function HeroSection({ showNavbar }) {
                 className="flex flex-col items-center"
             >
                 <div className="w-[16rem] h-[16rem] md:w-[30rem] md:h-[30rem] rounded-full overflow-hidden border-[3px] md:border-[6px] border-black shadow-lg mb-6 md:mb-12">
-                    <img src={`${process.env.PUBLIC_URL}/images/perfil.jpg`} alt="Profile" className="w-full h-full object-cover" />
+                    <img src={`${process.env.PUBLIC_URL}/images/perfil.png`} alt="Profile" className="w-full h-full object-cover" />
                 </div>
                 <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 px-4">
                     Hey, I'm <span className="text-blue-600">Alex Herrerias</span>.
@@ -56,7 +56,7 @@ export default function HeroSection({ showNavbar }) {
                         <span className="text-gray-800 text-sm md:text-base">
                             Software Developer | 
                             <span className="text-blue-600 font-semibold ml-2">
-                                Python & React Junior
+                                Data Science Junior
                             </span>
                         </span>
                     </div>

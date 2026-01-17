@@ -6,139 +6,128 @@ export default function LandingPage() {
     return (
         <div className="min-h-screen bg-white text-gray-900">
             <Navbar />
+            
+            {/* Hero Section: Debería resaltar tu perfil como "Software Engineer & Data Scientist" */}
             <HeroSection />
-            <section id="projects" className="w-full bg-[#0A192F] text-white py-10">
+
+            {/* Project Gallery: El corazón de tu portafolio del Máster */}
+            <section id="projects" className="w-full bg-[#0A192F] text-white py-16">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 text-center mb-10">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 italic">Featured Projects</h2>
+                    <p className="text-gray-400 max-w-2xl mx-auto">
+                        A selection of my work in Machine Learning, Big Data architectures, and Full-Stack development developed during my Master's Degree.
+                    </p>
+                </div>
                 <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16">
-                    <div className="mt-4">
-                        <ProjectGallery />
-                    </div>
+                    <ProjectGallery />
                 </div>
             </section>
+
             <section id="extras" className="w-full bg-white py-12 md:py-24">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12">
-                    <h3 className="text-3xl md:text-4xl font-bold mb-10 md:mb-16 text-[#0A192F] text-center">Skills & Experience</h3>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-10 md:mb-16 text-[#0A192F] text-center">Expertise & Background</h3>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
-                        <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-l-4 border-blue-500 transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                        {/* Technical Skills: Enfocado a Datos + Software */}
+                        <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-l-4 border-blue-600 transform transition-all hover:scale-[1.01]">
                             <h4 className="text-2xl font-bold mb-6 text-[#0A192F] flex items-center">
-                                <span className="w-10 h-10 flex items-center justify-center bg-blue-500 text-white rounded-full mr-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                                    </svg>
-                                </span>
-                                Technical Skills
+                                <span className="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full mr-3 text-lg">01</span>
+                                Technical Stack
                             </h4>
-                            <ul className="space-y-4">
+                            <ul className="grid grid-cols-1 gap-4">
                                 <li className="flex items-start">
-                                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                                    <div className="bg-blue-100 p-2 rounded mr-3">🚀</div>
                                     <div>
-                                        <span className="font-semibold">Web Development:</span>
-                                        <span className="text-gray-700"> React, Django, HTML, CSS, JavaScript</span>
+                                        <span className="font-bold block">Big Data & Data Science</span>
+                                        <span className="text-gray-600 text-sm">PySpark, Kafka, Scikit-Learn, PyTorch, NLP (spaCy)</span>
                                     </div>
                                 </li>
                                 <li className="flex items-start">
-                                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                                    <div className="bg-green-100 p-2 rounded mr-3">💻</div>
                                     <div>
-                                        <span className="font-semibold">Artificial Intelligence:</span>
-                                        <span className="text-gray-700"> PyTorch, TensorFlow, Machine Learning</span>
+                                        <span className="font-bold block">Full-Stack Development</span>
+                                        <span className="text-gray-600 text-sm">React, Node.js, Django, .NET (C#)</span>
                                     </div>
                                 </li>
                                 <li className="flex items-start">
-                                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                                    <div className="bg-purple-100 p-2 rounded mr-3">📊</div>
                                     <div>
-                                        <span className="font-semibold">Backend Development:</span>
-                                        <span className="text-gray-700"> C#, .NET, Python, Node.js</span>
+                                        <span className="font-bold block">Databases & Stats</span>
+                                        <span className="text-gray-600 text-sm">SQL, MongoDB, R (Statistical Modeling)</span>
                                     </div>
                                 </li>
                                 <li className="flex items-start">
-                                    <span className="text-blue-600 mr-3 mt-1">•</span>
+                                    <div className="bg-orange-100 p-2 rounded mr-3">🛠️</div>
                                     <div>
-                                        <span className="font-semibold">Databases:</span>
-                                        <span className="text-gray-700"> SQL, MongoDB, PostgreSQL</span>
-                                    </div>
-                                </li>
-                                <li className="flex items-start">
-                                    <span className="text-blue-600 mr-3 mt-1">•</span>
-                                    <div>
-                                        <span className="font-semibold">DevOps:</span>
-                                        <span className="text-gray-700"> Docker, CI/CD</span>
+                                        <span className="font-bold block">Infrastructure</span>
+                                        <span className="text-gray-600 text-sm">Docker, CI/CD, Git, Linux (HDFS/Hive)</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         
-                        <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-l-4 border-green-500 transform transition-all hover:scale-[1.02] hover:shadow-xl">
+                        {/* Professional & Master Journey */}
+                        <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-l-4 border-green-500 transform transition-all hover:scale-[1.01]">
                             <h4 className="text-2xl font-bold mb-6 text-[#0A192F] flex items-center">
-                                <span className="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full mr-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
-                                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-                                    </svg>
-                                </span>
-                                Professional Experience
+                                <span className="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full mr-3 text-lg">02</span>
+                                Career Path
                             </h4>
-                            <ul className="space-y-6">
-                                <li>
-                                    <div className="flex justify-between items-center mb-1">
-                                        <h5 className="font-semibold text-xl text-gray-800">Full Stack Developer</h5>
-                                        <span className="text-sm font-medium px-2 py-1 bg-gray-200 rounded-full">2021 - 2022</span>
-                                    </div>
-                                    <p className="text-gray-700">Development of web and mobile applications using modern technologies.</p>
-                                </li>
-                                <li>
-                                    <div className="flex justify-between items-center mb-1">
-                                        <h5 className="font-semibold text-xl text-gray-800">AI-based Final Degree Project</h5>
-                                        <span className="text-sm font-medium px-2 py-1 bg-gray-200 rounded-full">2024 - 2025</span>
-                                    </div>
-                                    <p className="text-gray-700">Research and development of deep learning models.</p>
-                                </li>
-                            </ul>
+                            <div className="space-y-6">
+                                <div className="relative pl-6 border-l-2 border-gray-200">
+                                    <div className="absolute -left-1.5 top-1.5 w-3 h-3 bg-green-500 rounded-full"></div>
+                                    <h5 className="font-bold text-lg leading-none">Master in Data Science Engineering</h5>
+                                    <span className="text-sm text-blue-600 font-bold uppercase tracking-widest">Present</span>
+                                    <p className="text-gray-600 text-sm mt-2">Specializing in distributed computing, advanced ML, and massive data processing architectures.</p>
+                                </div>
+                                <div className="relative pl-6 border-l-2 border-gray-200">
+                                    <div className="absolute -left-1.5 top-1.5 w-3 h-3 bg-gray-300 rounded-full"></div>
+                                    <h5 className="font-bold text-lg leading-none">Software Developer</h5>
+                                    <span className="text-sm text-gray-500 font-bold uppercase tracking-widest">2021 - 2022</span>
+                                    <p className="text-gray-600 text-sm mt-2">Built scalable web applications and managed cloud-based backend services.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div className="mt-6">
-                        <div className="bg-gray-50 p-8 rounded-xl shadow-lg border-l-4 border-purple-500 transform transition-all hover:scale-[1.02] hover:shadow-xl max-w-3xl mx-auto">
-                            <h4 className="text-2xl font-bold mb-6 text-[#0A192F] flex items-center">
-                                <span className="w-10 h-10 flex items-center justify-center bg-purple-500 text-white rounded-full mr-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                                    </svg>
-                                </span>
-                                Education
+                    {/* Education Section: Más limpia y centrada */}
+                    <div className="mt-12">
+                        <div className="bg-[#0A192F] text-white p-10 rounded-2xl shadow-2xl relative overflow-hidden">
+                            <div className="absolute right-0 top-0 opacity-10 transform translate-x-1/4 -translate-y-1/4">
+                                <svg width="400" height="400" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="50" r="40" stroke="white" strokeWidth="2" />
+                                    <path d="M50 10V90M10 50H90" stroke="white" strokeWidth="1" />
+                                </svg>
+                            </div>
+                            
+                            <h4 className="text-2xl font-bold mb-8 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mr-3 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                </svg>
+                                Academic Background
                             </h4>
-                            <div className="space-y-6">
-                                <div className="p-4 bg-white rounded-lg shadow-sm">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <h5 className="font-semibold text-xl text-gray-800">Computer Engineering Degree</h5>
-                                        <span className="text-sm font-medium px-3 py-1 bg-gray-200 rounded-full">2022 - 2024</span>
-                                    </div>
-                                    <p className="text-gray-700">Specialization in Artificial Intelligence and Software Development.</p>
+
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+                                <div className="space-y-2">
+                                    <p className="text-blue-400 font-mono text-sm">2025 - 2026</p>
+                                    <h5 className="font-bold text-lg">MSc in Data Science Engineering</h5>
+                                    <p className="text-gray-400 text-sm italic underline decoration-blue-500/50">UNED</p>
                                 </div>
-                                <div className="p-4 bg-white rounded-lg shadow-sm">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <h5 className="font-semibold text-xl text-gray-800">Higher Degree in Web Application Development</h5>
-                                        <span className="text-sm font-medium px-3 py-1 bg-gray-200 rounded-full">Sep 2019 - Jun 2021</span>
-                                    </div>
-                                    <p className="text-gray-700">IG Formación, Alicante</p>
+                                <div className="space-y-2">
+                                    <p className="text-blue-400 font-mono text-sm">2022 - 2025</p>
+                                    <h5 className="font-bold text-lg">Computer Engineering Degree</h5>
+                                    <p className="text-gray-400 text-sm">Focus on AI and Systems.</p>
                                 </div>
-                                <div className="p-4 bg-white rounded-lg shadow-sm">
-                                    <div className="flex justify-between items-center mb-2">
-                                        <h5 className="font-semibold text-xl text-gray-800">Technical Degree in Microcomputer Systems and Networks</h5>
-                                        <span className="text-sm font-medium px-3 py-1 bg-gray-200 rounded-full">Sep 2017 - May 2019</span>
-                                    </div>
-                                    <p className="text-gray-700">Cots Alicante</p>
+                                <div className="space-y-2">
+                                    <p className="text-blue-400 font-mono text-sm">2017 - 2021</p>
+                                    <h5 className="font-bold text-lg">Web & Systems Tech Degree</h5>
+                                    <p className="text-gray-400 text-sm">Practical software development base.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            {/* <section id="media" className="w-full bg-[#0A192F] text-white py-10 md:py-20">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12">
-                    <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Media</h3>
-                    <p className="text-base md:text-lg text-gray-300">Contenido multimedia aquí...</p>
-                </div>
-            </section> */}
         </div>
     );
 }
