@@ -11,3 +11,8 @@ db.sqlite3
 # Dependencias de Node.js
 node_modules/
 build/
+dist/
+
+# IDE / OS
+.idea/
+.DS_Store
