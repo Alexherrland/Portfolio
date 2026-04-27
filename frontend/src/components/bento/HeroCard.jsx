@@ -43,8 +43,7 @@ export default function HeroCard() {
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-ink md:text-5xl lg:text-[3.5rem] lg:leading-[1.05]">
             Hi, I'm <span className="text-accent-indigo">Alex Herrerias</span>.
             <span className="block text-ink-dim">
-              I build production
-              <span className="text-ink"> ticketing platforms</span> at Fever and study
+              Working at <span className="text-ink">Fever</span> and studying
               <span className="text-ink"> data science</span> on the side.
             </span>
           </h1>
