@@ -11,7 +11,7 @@ const groups = [
   },
   {
     label: 'Async & Integration',
-    items: ['Apache Camel', 'Apache CXF (SOAP)', 'RabbitMQ / AMQP', 'Resilience4j', 'Quartz', 'Hazelcast'],
+    items: ['Apache Camel', 'RabbitMQ / AMQP', 'Resilience4j'],
   },
   {
     label: 'Data',
@@ -19,11 +19,11 @@ const groups = [
   },
   {
     label: 'Auth & Security',
-    items: ['OAuth2 / JWT', 'WSS4J', 'X.509 mTLS'],
+    items: ['OAuth2 / JWT'],
   },
   {
     label: 'Testing & DevOps',
-    items: ['Karate (BDD)', 'JUnit 5', 'Mockito', 'Testcontainers', 'Docker', 'Kubernetes'],
+    items: ['Karate (BDD)', 'JUnit 5', 'Mockito', 'Kubernetes'],
   },
 ];
 
