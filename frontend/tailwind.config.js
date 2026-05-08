@@ -21,11 +21,13 @@ export default {
         accent: {
           indigo: '#6366F1',
           cyan: '#06B6D4',
+          violet: '#A78BFA',
         },
       },
       boxShadow: {
         'glow-indigo': '0 0 60px -15px rgba(99, 102, 241, 0.45)',
         'glow-cyan': '0 0 60px -15px rgba(6, 182, 212, 0.40)',
+        'glow-violet': '0 0 60px -15px rgba(167, 139, 250, 0.45)',
         'inner-hairline': 'inset 0 1px 0 rgba(255, 255, 255, 0.04)',
       },
       backgroundImage: {

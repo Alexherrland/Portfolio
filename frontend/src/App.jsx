@@ -5,6 +5,7 @@ import StatusCard from './components/bento/StatusCard.jsx';
 import SocialCard from './components/bento/SocialCard.jsx';
 import OneboxStackCard from './components/bento/OneboxStackCard.jsx';
 import DataScienceStackCard from './components/bento/DataScienceStackCard.jsx';
+import AgenticAiCard from './components/bento/AgenticAiCard.jsx';
 import FeaturedProjectCard from './components/bento/FeaturedProjectCard.jsx';
 import ProjectsListCard from './components/bento/ProjectsListCard.jsx';
 import EducationCard from './components/bento/EducationCard.jsx';
@@ -21,6 +22,7 @@ export default function App() {
           <SocialCard />
           <OneboxStackCard />
           <DataScienceStackCard />
+          <AgenticAiCard />
           <FeaturedProjectCard />
           <EducationCard />
           <ProjectsListCard />

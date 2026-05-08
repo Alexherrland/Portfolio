@@ -12,6 +12,7 @@ const itemVariants = {
 const accentByName = {
   indigo: 'indigo',
   cyan: 'cyan',
+  violet: 'violet',
 };
 
 export default function BentoCard({
