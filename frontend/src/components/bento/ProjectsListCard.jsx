@@ -7,7 +7,7 @@ const projects = [
     title: "Bachelor's Thesis · app_unet",
     subtitle: 'Modified RUNet for image upscaling & super-resolution',
     stack: 'PyTorch · Python · RUNet',
-    href: 'https://github.com/Alexherrland/app_unet',
+    href: 'https://github.com/AlexHerrerias/app_unet',
     accent: 'indigo',
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     title: 'MSc Data Science Engineering',
     subtitle: 'Distributed ML, NLP and time series across the MSc programme at UNED',
     stack: 'PyTorch · PySpark · Kafka · R',
-    href: 'https://github.com/Alexherrland/master-data-science',
+    href: 'https://github.com/AlexHerrerias/master-data-science',
     accent: 'indigo',
   },
   {
@@ -23,15 +23,15 @@ const projects = [
     title: 'CS2 Major Calculator',
     subtitle: 'Buchholz pairings & probabilities for Counter-Strike 2 majors',
     stack: 'TypeScript · Django · Python',
-    href: 'https://github.com/Alexherrland/CS2MajorCalculator',
+    href: 'https://github.com/AlexHerrerias/CS2MajorCalculator',
     accent: 'indigo',
   },
   {
     icon: GithubIcon,
     title: 'More on GitHub',
     subtitle: 'Side projects, experiments, course work',
-    stack: '@Alexherrland',
-    href: 'https://github.com/Alexherrland',
+    stack: '@AlexHerrerias',
+    href: 'https://github.com/AlexHerrerias',
     accent: 'indigo',
   },
 ];

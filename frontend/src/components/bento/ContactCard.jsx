@@ -34,7 +34,7 @@ export default function ContactCard() {
           </a>
           <div className="flex items-center gap-2">
             <a
-              href="https://github.com/Alexherrland"
+              href="https://github.com/AlexHerrerias"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-white/[0.06] bg-white/[0.02] px-3 py-2 text-xs font-medium text-ink-dim transition-colors duration-200 hover:border-white/[0.12] hover:text-ink"

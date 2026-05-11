@@ -12,7 +12,7 @@ export default function FeaturedProjectCard() {
       id="work"
     >
       <a
-        href="https://github.com/Alexherrland/tfm-anonimizacion-ia"
+        href="https://github.com/AlexHerrerias/tfm-anonimizacion-ia"
         target="_blank"
         rel="noopener noreferrer"
         className="group flex h-full flex-col gap-5 sm:flex-row sm:items-stretch"

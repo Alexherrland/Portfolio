@@ -4,9 +4,9 @@ import BentoCard from './BentoCard.jsx';
 const links = [
   {
     icon: GithubIcon,
-    href: 'https://github.com/Alexherrland',
+    href: 'https://github.com/AlexHerrerias',
     label: 'GitHub',
-    handle: '@Alexherrland',
+    handle: '@AlexHerrerias',
   },
   {
     icon: LinkedinIcon,
