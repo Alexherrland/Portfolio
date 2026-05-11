@@ -1,4 +1,4 @@
-import { ArrowUpRight, Brain, Trophy, GithubIcon } from 'lucide-react';
+import { ArrowUpRight, Brain, GraduationCap, Trophy, GithubIcon } from 'lucide-react';
 import BentoCard from './BentoCard.jsx';
 
 const projects = [
@@ -8,6 +8,14 @@ const projects = [
     subtitle: 'Modified RUNet for image upscaling & super-resolution',
     stack: 'PyTorch · Python · RUNet',
     href: 'https://github.com/Alexherrland/app_unet',
+    accent: 'indigo',
+  },
+  {
+    icon: GraduationCap,
+    title: 'MSc Data Science Engineering',
+    subtitle: 'Distributed ML, NLP and time series across the MSc programme at UNED',
+    stack: 'PyTorch · PySpark · Kafka · R',
+    href: 'https://github.com/Alexherrland/master-data-science',
     accent: 'indigo',
   },
   {
@@ -40,7 +48,7 @@ export default function ProjectsListCard() {
           <p className="label-mono text-accent-indigo">/ Selected projects</p>
         </div>
 
-        <div className="grid flex-1 grid-cols-1 gap-3 sm:grid-cols-3">
+        <div className="grid flex-1 grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {projects.map(({ icon: Icon, title, subtitle, stack, href }) => (
             <a
               key={title}
